@@ -1,0 +1,135 @@
+.attribution-wrapper {
+  background: linear-gradient(to bottom right, #4c53b3, #5b7ce5);
+  color: white;
+  padding: 1rem;
+  border-radius: 10px;
+  // margin-top: 1rem;
+
+  .attribution {
+    --clr-attb-primary: yellow;
+    --clr-attb-secondary: #adad00;
+    --fs-attb: calc(1rem - 2px);
+    text-align: center;
+    line-height: 1.4;
+    font-size: var(--fs-attb);
+    padding: 0 0.5rem;
+    border-left: 2px solid var(--clr-attb-primary);
+    border-right: 2px solid var(--clr-attb-primary);
+    border-radius: 10px;
+    margin: auto;
+    max-width: -webkit-fit-content;
+    max-width: -moz-fit-content;
+    max-width: fit-content;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.5rem;
+
+    @media screen and (min-width: 375px) {
+      flex-direction: row;
+    }
+
+    .attb-link {
+      color: var(--clr-attb-primary);
+      padding: 0 5px;
+      -webkit-transition: all 0.2s ease-in-out;
+      -o-transition: all 0.2s ease;
+      transition: all 0.2s ease;
+      border-bottom: 2px dotted var(--clr-attb-primary);
+      font-size: calc(var(--fs-attb) + 4px);
+      text-decoration: none;
+
+      &:hover,
+      &:focus {
+        color: var(--clr-attb-secondary);
+      }
+    }
+
+    .attb-fem {
+      font-size: calc(var(--fs-attb) / 1.1);
+    }
+  }
+}
+
+///////////
+/// my profile
+.my-profile {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  width: 100vw;
+  background-color: rgb(0, 23, 36);
+  z-index: 2000;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  opacity: 0;
+  visibility: hidden;
+  animation: fadeInOut 3s ease 1 forwards;
+  user-select: none;
+
+  &__content {
+    max-width: 30rem;
+    text-align: center;
+    margin-top: -9rem;
+
+    img {
+      max-height: 16rem;
+      width: auto;
+      pointer-events: none;
+      margin-bottom: 2rem;
+    }
+
+    h1 {
+      font-size: 3rem;
+      color: rgb(0, 247, 255);
+      animation: slideUp 2s ease 1 forwards;
+    }
+
+    h2 {
+      font-size: 1.2rem;
+      font-weight: normal;
+      opacity: 0.6;
+      color: rgb(0, 247, 255);
+      animation: slideUp 2s ease 1 forwards 0.2s;
+    }
+  }
+}
+
+@keyframes fadeInOut {
+  0% {
+    opacity: 1;
+    visibility: visible;
+    user-select: all;
+  }
+  70% {
+    opacity: 1;
+    visibility: visible;
+    user-select: all;
+  }
+
+  100% {
+    opacity: 0;
+    visibility: hidden;
+    user-select: none;
+  }
+}
+
+@keyframes slideUp {
+  0% {
+    transform: translateY(2rem);
+    opacity: 0;
+  }
+  30% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
