@@ -1,30 +1,50 @@
 :root {
-  --very-dark-gray: hsl(0, 0%, 17%);
-  --dark-gray: hsl(0, 0%, 59%);
+  --desaturated-dark-cyan: hsl(180, 29%, 50%);
+  --bg-light-grayish-cyan: hsl(180, 52%, 96%); //(Background)
+  --tabs-light-grayish-cyan: hsl(180, 31%, 95%); //(Filter Tablets)
+  --dark-grayish-cyan: hsl(180, 8%, 52%);
+  --very-dark-grayish-cyan: hsl(180, 14%, 20%);
   --white: white;
-  --detail-height: 15rem;
+
+  --header-height: 9rem;
 }
 
-$bp-medium: 500px;
-$bp-large: 700px;
+$bp-medium: 650px;
+$bp-small: 315px;
+$bp-very-small: 250px;
 
 html {
-  @media screen and (max-width: 320px) {
-    font-size: 0.7rem;
+  @media screen and (max-width: $bp-small) {
+    font-size: 0.8rem;
+  }
+
+  @media screen and (max-width: $bp-very-small) {
+    font-size: 0.6rem;
   }
 }
 
-@media screen and (min-width: $bp-large) {
-  :root {
-    --detail-height: 13rem;
-  }
-}
+// @media screen and (min-width: $bp-large) {
+//   :root {
+//     --detail-height: 13rem;
+//   }
 
 body {
-  font-family: "Rubik", sans-serif;
+  font-family: "League Spartan", sans-serif;
   position: relative;
+  background-color: var(--bg-light-grayish-cyan);
+}
+
+.container {
+  margin: auto;
+  padding: 4rem 1rem 2rem;
+  max-width: 500px;
+
+  @media screen and (min-width: $bp-medium) {
+    max-width: 1200px;
+  }
 }
 
 .footer {
   padding: 1rem;
 }
+

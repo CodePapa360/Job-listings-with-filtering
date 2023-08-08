@@ -1,172 +1,182 @@
 <!doctype html>
 <html lang="en">
-	<head>
-		<meta charset="UTF-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-		<link
-			rel="icon"
-			type="image/png"
-			sizes="32x32"
-			href="./images/favicon-32x32.png"
-		/>
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
 
-		<title>Frontend Mentor | Job Listings</title>
-		<script type="module" src="./main.js"></script>
-	</head>
-	<body>
-		<main>
-			<section class="top-section">
-				<div class="container">
-					<div class="filter-container">
-						<div class="filter-container__filters">
-							<button type="button" class="filter">
-								Frontend
-								<span
-									><img src="./images/icon-remove.svg" alt="Remove icon"
-								/></span>
-							</button>
-							<button type="button" class="filter">
-								Senior
-								<span
-									><img src="./images/icon-remove.svg" alt="Remove icon"
-								/></span>
-							</button>
-							<button type="button" class="filter">
-								JavaScript
-								<span
-									><img src="./images/icon-remove.svg" alt="Remove icon"
-								/></span>
-							</button>
-						</div>
+    <title>Frontend Mentor | Job Listings</title>
+    <script type="module" src="./main.js"></script>
+  </head>
+  <body>
+    <header class="header"></header>
 
-						<button>Clear</button>
-					</div>
-				</div>
-			</section>
+    <main>
+      <div class="container">
+        <div class="filter-container">
+          <div class="filter-container__filters">
+            <button type="button" class="filter">
+              Frontend
+              <span
+                ><img src="./images/icon-remove.svg" alt="Remove icon"
+              /></span>
+            </button>
+            <button type="button" class="filter">
+              Senior
+              <span
+                ><img src="./images/icon-remove.svg" alt="Remove icon"
+              /></span>
+            </button>
+            <button type="button" class="filter">
+              JavaScript
+              <span
+                ><img src="./images/icon-remove.svg" alt="Remove icon"
+              /></span>
+            </button>
+          </div>
 
-			<section class="bottom-section">
-				<div class="container">
-					<ul class="job-list">
-						<li class="job-list__job">
-							<div class="job-details">
-								<div class="logo">
-									<img src="./images/photosnap.svg" alt="photosnap logo" />
-								</div>
-								<div class="job-details__details">
-									<div class="details__head">
-										<p class="company">Photosnap</p>
-										<span class="new">New!</span
-										><span class="featured">Featured</span>
-									</div>
-									<p class="details__position">Senior Frontend Developer</p>
-									<div class="details__bottom">
-										<span class="postedAt">1d ago</span>
-										<span class="contract">Full Time</span>
-										<span class="location">USA Only</span>
-									</div>
-								</div>
-							</div>
+          <button class="btn-clear">Clear</button>
+        </div>
 
-							<div class="skills">
-								<span class="skill">Frontend</span>
-								<span class="skill">HTML</span>
-								<span class="skill">CSS</span>
-								<span class="skill">JavaScript</span>
-							</div>
-						</li>
+        <ul class="job-list">
+          <li class="job-list__job updated">
+            <div class="logo">
+              <img src="./images/photosnap.svg" alt="photosnap logo" />
+            </div>
 
-						<!--  -->
+            <div class="job-info">
+              <div class="job-info__head">
+                <p class="company">Photosnap</p>
+                <span class="new">New!</span
+                ><span class="featured">Featured</span>
+              </div>
 
-						<li class="job-list__job">
-							<div class="job-details">
-								<div class="logo">
-									<img src="./images/manage.svg" alt="manage logo" />
-								</div>
-								<div class="job-details__details">
-									<div class="details__head">
-										<p class="company">Manage</p>
-										<span class="new">New!</span
-										><span class="featured">Featured</span>
-									</div>
-									<p class="details__position">Fullstack Developer</p>
-									<div class="details__bottom">
-										<span class="postedAt">1d ago</span>
-										<span class="contract">Part Time</span>
-										<span class="location">Remote</span>
-									</div>
-								</div>
-							</div>
+              <a href="#" class="job-info__position"
+                >Senior Frontend Developer</a
+              >
 
-							<div class="skills">
-								<span class="skill">Fullstack</span>
-								<span class="skill">Midweight</span>
-								<span class="skill">Python</span>
-								<span class="skill">React</span>
-							</div>
-						</li>
+              <div class="job-info__bottom">
+                <span class="postedAt">1d ago</span>
+                <span class="contract">Full Time</span>
+                <span class="location">USA Only</span>
+              </div>
+            </div>
 
-						<!--  -->
+            <div class="skills">
+              <button class="skill">Frontend</button>
+              <button class="skill">HTML</button>
+              <button class="skill">CSS</button>
+              <button class="skill">JavaScript</button>
+            </div>
+          </li>
 
-						<li class="job-list__job">
-							<div class="job-details">
-								<div class="logo">
-									<img src="./images/account.svg" alt="account logo" />
-								</div>
-								<div class="job-details__details">
-									<div class="details__head">
-										<p class="company">Account</p>
-										<span class="new">New!</span>
-									</div>
-									<p class="details__position">Junior Frontend Developer</p>
-									<div class="details__bottom">
-										<span class="postedAt">2d ago</span>
-										<span class="contract">Part Time</span>
-										<span class="location">Remote</span>
-									</div>
-								</div>
-							</div>
+          <!--  -->
 
-							<div class="skills">
-								<span class="skill">Frontend</span>
-								<span class="skill">Junior</span>
-								<span class="skill">React</span>
-								<span class="skill">Sass</span>
-								<span class="skill">JavaScript</span>
-							</div>
-						</li>
+          <li class="job-list__job">
+            <div class="logo">
+              <img src="./images/photosnap.svg" alt="photosnap logo" />
+            </div>
 
-						<!--  -->
+            <div class="job-info">
+              <div class="job-info__head">
+                <p class="company">Photosnap</p>
+                <span class="new">New!</span
+                ><span class="featured">Featured</span>
+              </div>
 
-						<li class="job-list__job">
-							<div class="job-details">
-								<div class="logo">
-									<img src="./images/myhome.svg" alt="myhome logo" />
-								</div>
-								<div class="job-details__details">
-									<div class="details__head">
-										<p class="company">MyHome</p>
-									</div>
-									<p class="details__position">Junior Frontend Developer</p>
-									<div class="details__bottom">
-										<span class="postedAt">5d ago</span>
-										<span class="contract">Contract</span>
-										<span class="location">USA Only</span>
-									</div>
-								</div>
-							</div>
+              <a href="#" class="job-info__position"
+                >Senior Frontend Developer</a
+              >
 
-							<div class="skills">
-								<span class="skill">Frontend</span>
-								<span class="skill">Junior</span>
-								<span class="skill">CSS</span>
-								<span class="skill">JavaScript</span>
-							</div>
-						</li>
-					</ul>
-				</div>
-			</section>
-		</main>
-	</body>
+              <div class="job-info__bottom">
+                <span class="postedAt">1d ago</span>
+                <span class="contract">Full Time</span>
+                <span class="location">USA Only</span>
+              </div>
+            </div>
+
+            <div class="skills">
+              <button class="skill">Frontend</button>
+              <button class="skill">HTML</button>
+              <button class="skill">CSS</button>
+              <button class="skill">JavaScript</button>
+            </div>
+          </li>
+
+          <!--  -->
+
+          <li class="job-list__job">
+            <div class="logo">
+              <img src="./images/photosnap.svg" alt="photosnap logo" />
+            </div>
+
+            <div class="job-info">
+              <div class="job-info__head">
+                <p class="company">Photosnap</p>
+                <span class="new">New!</span
+                ><span class="featured">Featured</span>
+              </div>
+
+              <a href="#" class="job-info__position"
+                >Senior Frontend Developer</a
+              >
+
+              <div class="job-info__bottom">
+                <span class="postedAt">1d ago</span>
+                <span class="contract">Full Time</span>
+                <span class="location">USA Only</span>
+              </div>
+            </div>
+
+            <div class="skills">
+              <button class="skill">Frontend</button>
+              <button class="skill">HTML</button>
+              <button class="skill">CSS</button>
+              <button class="skill">JavaScript</button>
+            </div>
+          </li>
+
+          <!--  -->
+
+          <li class="job-list__job">
+            <div class="logo">
+              <img src="./images/photosnap.svg" alt="photosnap logo" />
+            </div>
+
+            <div class="job-info">
+              <div class="job-info__head">
+                <p class="company">Photosnap</p>
+                <span class="new">New!</span
+                ><span class="featured">Featured</span>
+              </div>
+
+              <a href="#" class="job-info__position"
+                >Senior Frontend Developer</a
+              >
+
+              <div class="job-info__bottom">
+                <span class="postedAt">1d ago</span>
+                <span class="contract">Full Time</span>
+                <span class="location">USA Only</span>
+              </div>
+            </div>
+
+            <div class="skills">
+              <button class="skill">Frontend</button>
+              <button class="skill">HTML</button>
+              <button class="skill">CSS</button>
+              <button class="skill">JavaScript</button>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </main>
+  </body>
 </html>
 
