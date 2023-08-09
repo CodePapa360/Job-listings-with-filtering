@@ -5,7 +5,6 @@
   --dark-grayish-cyan: hsl(180, 8%, 52%);
   --very-dark-grayish-cyan: hsl(180, 14%, 20%);
   --white: white;
-
   --header-height: 9rem;
 }
 
@@ -22,11 +21,6 @@ html {
     font-size: 0.6rem;
   }
 }
-
-// @media screen and (min-width: $bp-large) {
-//   :root {
-//     --detail-height: 13rem;
-//   }
 
 body {
   font-family: "League Spartan", sans-serif;

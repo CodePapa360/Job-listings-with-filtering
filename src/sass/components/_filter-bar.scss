@@ -40,6 +40,13 @@
         }
       }
 
+      &:focus {
+        outline-style: dotted;
+        outline-offset: 2px;
+        outline-width: 3px;
+        outline-color: var(--desaturated-dark-cyan);
+      }
+
       span {
         background-color: var(--desaturated-dark-cyan);
         height: 100%;
@@ -64,6 +71,13 @@
     &:hover {
       color: var(--desaturated-dark-cyan);
       text-decoration: underline;
+    }
+
+    &:focus {
+      outline-style: dotted;
+      outline-offset: 2px;
+      outline-width: 3px;
+      outline-color: var(--desaturated-dark-cyan);
     }
   }
 }

@@ -23,7 +23,7 @@
 
     .logo {
       max-width: 3rem;
-      margin-top: -3rem;
+      margin-top: -2.5rem;
 
       @media screen and (min-width: $bp-medium) {
         max-width: 5rem;
@@ -76,6 +76,13 @@
         &:hover {
           color: var(--desaturated-dark-cyan);
         }
+
+        &:focus {
+          outline-style: dotted;
+          outline-offset: 2px;
+          outline-width: 3px;
+          outline-color: var(--desaturated-dark-cyan);
+        }
       }
 
       &__bottom {
@@ -124,9 +131,17 @@
           color 0.2s ease,
           background 0.2s ease;
 
+        &:hover,
         &:active {
           color: var(--white);
           background-color: var(--desaturated-dark-cyan);
+        }
+
+        &:focus {
+          outline-style: dotted;
+          outline-offset: 2px;
+          outline-width: 3px;
+          outline-color: var(--desaturated-dark-cyan);
         }
       }
     }
