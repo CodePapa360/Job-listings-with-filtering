@@ -1,4 +1,4 @@
-export default function renderJobs(data) {
+export default function (data) {
   const jobsContainer = document.querySelector(".job-list");
 
   const markup = data
