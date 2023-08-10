@@ -26,7 +26,6 @@ jobsContainer.addEventListener("click", (e) => {
   if (!btn) return;
   const { catagory } = btn.dataset;
   const { field } = btn.dataset;
-  const has = 
 
   // currentStates.push({ [catagory]: field });
   // console.log(currentStates);
