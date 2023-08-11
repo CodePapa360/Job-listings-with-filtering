@@ -61,9 +61,9 @@ export default function (data) {
     )
     .join("");
 
-  jobsContainer.style.opacity = "0";
+  jobsContainer.classList.add("hide");
   setTimeout(() => {
     jobsContainer.innerHTML = markup;
-    jobsContainer.style.opacity = "1";
+    jobsContainer.classList.remove("hide");
   }, 200);
 }
