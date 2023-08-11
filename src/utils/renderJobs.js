@@ -61,5 +61,9 @@ export default function (data) {
     )
     .join("");
 
-  jobsContainer.innerHTML = markup;
+  jobsContainer.style.opacity = "0";
+  setTimeout(() => {
+    jobsContainer.innerHTML = markup;
+    jobsContainer.style.opacity = "1";
+  }, 200);
 }

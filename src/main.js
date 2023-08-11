@@ -2,7 +2,7 @@ import "./sass/main.scss";
 import dataJson from "./data/data.json";
 import renderJobs from "./utils/renderJobs";
 import renderFilterBar from "./utils/renderFilterBar";
-import { filtering } from "./utils/filtering";
+import filtering from "./utils/filtering";
 
 (function () {
   const jobsContainer = document.querySelector(".job-list");
