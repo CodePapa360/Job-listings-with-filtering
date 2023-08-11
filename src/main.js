@@ -1,54 +1,66 @@
 import "./sass/main.scss";
 import dataJson from "./data/data.json";
-import renderJobs from "./components/utils/renderJobs";
-import renderFilterBar from "./components/utils/renderFilterBar";
+import renderJobs from "./utils/renderJobs";
+import renderFilterBar from "./utils/renderFilterBar";
+import { filtering } from "./utils/filtering";
 
-const jobsContainer = document.querySelector(".job-list");
+(function () {
+  const jobsContainer = document.querySelector(".job-list");
+  const filterContainer = document.querySelector(".filter-container__filters");
+  const btnClear = document.querySelector(".btn-clear");
 
-function filtering(filters) {
-  return dataJson.filter((job) =>
-    filters.every((filter) => {
-      const [property, value] = Object.entries(filter)[0];
-      return job[property] && job[property].includes(value);
-    }),
-  );
-}
+  let currentStates = [];
+  renderJobs(dataJson);
 
-let currentStates = {
-  role: null,
-  level: null,
-  tools: [],
-  languages: [],
-};
+  function showFilterBar() {
+    const filterBar = document.querySelector(".filter-container");
+    filterBar.style.display = "flex";
+  }
 
-jobsContainer.addEventListener("click", (e) => {
-  const btn = e.target.closest(".skill");
-  if (!btn) return;
-  const { catagory } = btn.dataset;
-  const { field } = btn.dataset;
+  function hideFilterBar() {
+    const filterBar = document.querySelector(".filter-container");
+    filterBar.style.display = "none";
+  }
 
-  // currentStates.push({ [catagory]: field });
-  // console.log(currentStates);
-  // const newList = filtering(currentStates);
-  // console.log(newList);
+  function addFilter(e) {
+    const btn = e.target.closest(".skill");
+    if (!btn) return;
 
-  // renderJobs(newList);
-  // renderFilterBar(currentStates);
-});
+    const { field } = btn.dataset;
+    const hasField = currentStates.includes(field);
+    if (hasField) return;
 
-renderJobs(dataJson);
+    currentStates.push(field);
 
-// let test = [{ a: 1 }, { b: 2 }, { c: 3 }];
+    const newList = filtering(currentStates);
+    renderJobs(newList);
 
-// test.forEach((obj) => {
-//   const rem = 2;
+    if (currentStates.length === 1) showFilterBar();
+    renderFilterBar(currentStates);
+  }
 
-//   const target = Object.values(obj)[0] === rem;
-//   console.log(target);
-// });
+  function removeFilter(e) {
+    const btn = e.target.closest(".filter");
+    if (!btn) return;
+    const { field } = btn.dataset;
 
-// const var1 = ["a", "b", "c"];
-// const var2 = ["p", "d"];
+    const index = currentStates.indexOf(field);
+    currentStates.splice(index, 1);
 
-// const test = var1.some((varss) => var2.includes(varss));
-// console.log(test);
+    const newList = filtering(currentStates);
+    renderJobs(newList);
+
+    if (currentStates.length === 0) hideFilterBar();
+    renderFilterBar(currentStates);
+  }
+
+  function removeAllFilters() {
+    currentStates = [];
+    hideFilterBar();
+    renderJobs(dataJson);
+  }
+
+  jobsContainer.addEventListener("click", addFilter);
+  filterContainer.addEventListener("click", removeFilter);
+  btnClear.addEventListener("click", removeAllFilters);
+})();

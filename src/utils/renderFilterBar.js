@@ -3,11 +3,9 @@ export default function (filters) {
 
   const markup = filters
     .map((filter) => {
-      const [key, value] = Object.entries(filter)[0];
-
       return `
-    <button type="button" class="filter" data-catagory="${key}" data-field="${value}">
-        ${value}
+    <button type="button" class="filter" data-field="${filter}">
+        ${filter}
         <span><img src="./images/icon-remove.svg" alt="Remove icon"/></span>
     </button>
     `;
