@@ -28,7 +28,7 @@ Challenge from [Frontend Mentor](https://www.frontendmentor.io/challenges)
 
 <!-- Brief -->
 <p align="center">
-
+This app filters jobs by role, level, languages, and tools. It receives data from a local JSON file and manipulates it conditionally to provide the most relevant results. This project was a great way to practice filtering methods in JavaScript.
 </p>
 
 <!-- Screenshot -->
@@ -48,13 +48,11 @@ Users should be able to:
 
 ## Built with
 
-- JavaScript
+- Vanilla JavaScript
 - Sass
 - HTML5
 - Mobile-first workflow
-- [Vite](https://vitejs.dev/) - A fast JavaScript module bundler and development server.
-
-## What I Learned
+- [Vite](https://vitejs.dev/) - A JavaScript module bundler and development server.
 
 ## Installation
 
@@ -100,3 +98,4 @@ This project was inspired by the "IP Address Tracker" challenge from Frontend Me
 ## License
 
 This project is licensed under the [MIT](https://github.com/CodePapa360/Job-listings-with-filtering/blob/main/LICENSE.md) License - see the LICENSE file for details.
+
