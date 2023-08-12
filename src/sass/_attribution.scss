@@ -78,31 +78,40 @@
   visibility: hidden;
   animation: fadeInOut 3s ease 1 forwards;
   user-select: none;
+  pointer-events: none;
 
   &__content {
     max-width: 30rem;
     text-align: center;
     margin-top: -9rem;
+    user-select: none;
+    pointer-events: none;
 
     img {
       max-height: 16rem;
       width: auto;
+      user-select: none;
       pointer-events: none;
       margin-bottom: 2rem;
     }
 
-    h1 {
+    .name {
       font-size: 3rem;
       color: rgb(0, 247, 255);
       animation: slideUp 2s ease 1 forwards;
+      font-weight: bold;
+      user-select: none;
+      pointer-events: none;
     }
 
-    h2 {
+    .username {
       font-size: 1.2rem;
       font-weight: normal;
       opacity: 0.6;
       color: rgb(0, 247, 255);
       animation: slideUp 2s ease 1 forwards 0.2s;
+      user-select: none;
+      pointer-events: none;
     }
   }
 }
