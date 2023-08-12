@@ -2,9 +2,9 @@
   display: flex;
   flex-direction: column;
   gap: 3rem;
-  transition: all 0.2s ease;
+  transition: all 0.1s ease;
   opacity: 1;
-  transform: translateY(0) scale(1);
+  transform: translateY(0);
 
   @media screen and (min-width: $bp-medium) {
     gap: 1rem;
@@ -158,5 +158,5 @@
 
 .job-list.hide {
   opacity: 0;
-  transform: translateY(2rem) scale(0.8);
+  transform: translateY(0.5rem);
 }

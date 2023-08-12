@@ -65,5 +65,5 @@ export default function (data) {
   setTimeout(() => {
     jobsContainer.innerHTML = markup;
     jobsContainer.classList.remove("hide");
-  }, 200);
+  }, 100);
 }
