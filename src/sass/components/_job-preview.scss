@@ -11,13 +11,23 @@
   }
 
   &__job {
-    background-color: var(--white);
+    // background-color: var(--white);
     box-shadow: 0 10px 15px hsla(180, 29%, 50%, 0.3);
     border-radius: 5px;
     padding: 1rem;
     display: flex;
     flex-direction: column;
     gap: 0.5rem;
+
+    // Custom touch
+
+    background: rgb(255, 255, 255);
+    background: linear-gradient(
+      121deg,
+      rgba(255, 255, 255, 1) 10%,
+      rgb(194, 236, 255) 50%,
+      rgba(255, 255, 255, 1) 100%
+    );
 
     @media screen and (min-width: $bp-medium) {
       flex-direction: row;
@@ -52,13 +62,13 @@
 
         .company {
           margin-right: 1rem;
-          color: var(--desaturated-dark-cyan);
+          color: var(--light-blue);
           font-weight: 700;
         }
 
         .new,
         .featured {
-          background-color: var(--desaturated-dark-cyan);
+          background-color: var(--light-blue);
           color: var(--white);
           padding: 0 0.6rem;
           border-radius: 999px;
@@ -78,14 +88,14 @@
         font-size: 1.2rem;
 
         &:hover {
-          color: var(--desaturated-dark-cyan);
+          color: var(--light-blue);
         }
 
         &:focus {
           outline-style: dotted;
           outline-offset: 2px;
           outline-width: 3px;
-          outline-color: var(--desaturated-dark-cyan);
+          outline-color: var(--light-blue);
         }
       }
 
@@ -126,7 +136,7 @@
       .skill {
         background-color: var(--tabs-light-grayish-cyan);
         padding: 0rem 0.4rem;
-        color: var(--desaturated-dark-cyan);
+        color: var(--light-blue);
         border-radius: 5px;
         font-weight: 700;
         border: none;
@@ -135,24 +145,28 @@
           color 0.2s ease,
           background 0.2s ease;
 
+        // Custom touch
+        background-color: var(--light-blue);
+        color: var(--white);
+
         &:hover,
         &:active {
           color: var(--white);
-          background-color: var(--desaturated-dark-cyan);
+          background-color: var(--dark-grayish-cyan);
         }
 
         &:focus {
           outline-style: dotted;
           outline-offset: 2px;
           outline-width: 3px;
-          outline-color: var(--desaturated-dark-cyan);
+          outline-color: var(--light-blue);
         }
       }
     }
   }
 
   &__job.updated {
-    border-left: 5px solid var(--desaturated-dark-cyan);
+    border-left: 5px solid var(--light-blue);
   }
 }
 

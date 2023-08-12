@@ -16,7 +16,9 @@ export default function (data) {
         ${job.featured ? `<span class="featured">Featured</span>` : ""}
       </div>
 
-      <a href="#" class="job-info__position"
+      <a href="https://example.com/" 
+      target="blank"
+      class="job-info__position"
         >${job.position}</a
       >
 
