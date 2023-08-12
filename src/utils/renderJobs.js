@@ -28,18 +28,14 @@ export default function (data) {
     </div>
 
     <div class="skills">
-      <button class="skill" data-catagory="role" data-field="${job.role}">${
-        job.role
-      }</button>
-      <button class="skill" data-catagory="level" data-field="${job.level}">${
-        job.level
-      }</button>
+      <button class="skill" data-field="${job.role}">${job.role}</button>
+      <button class="skill" data-field="${job.level}">${job.level}</button>
       ${
         job.languages.length
           ? job.languages
               .map(
                 (lng) =>
-                  `<button class="skill"  data-catagory="languages" data-field="${lng}">${lng}</button>`,
+                  `<button class="skill" data-field="${lng}">${lng}</button>`,
               )
               .join("")
           : ""
@@ -50,7 +46,7 @@ export default function (data) {
           ? job.tools
               .map(
                 (tool) =>
-                  `<button class="skill" data-catagory="tools" data-field="${tool}">${tool}</button>`,
+                  `<button class="skill" data-field="${tool}">${tool}</button>`,
               )
               .join("")
           : ""
