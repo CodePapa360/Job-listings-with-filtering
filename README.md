@@ -9,9 +9,9 @@ Challenge from [Frontend Mentor](https://www.frontendmentor.io/challenges)
 
 <h2>
 
-[🚀Live Site](https://job-listings-with-filtering-codepapa360.vercel.app)
+[🚀Live Demo](https://job-listings-with-filtering-codepapa360.vercel.app)
 ||
-[💡Frontend Mentor]()
+[💡Frontend Mentor](https://www.frontendmentor.io/solutions/job-listings-with-filtering-custom-retouch-Lv6k8-oauf)
 
 </h2>
 </div>
