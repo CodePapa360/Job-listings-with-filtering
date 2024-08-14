@@ -5,9 +5,11 @@ import renderFilterBar from "./utils/renderFilterBar";
 import filtering from "./utils/filtering";
 
 (function () {
-  const jobsContainer = document.querySelector(".job-list");
-  const filterContainer = document.querySelector(".filter-container__filters");
-  const btnClear = document.querySelector(".btn-clear");
+  const jobsContainer = document.querySelector(".job-list") as HTMLUListElement;
+  const filterContainer = document.querySelector(
+    ".filter-container__filters",
+  ) as HTMLDivElement;
+  const btnClear = document.querySelector(".btn-clear") as HTMLButtonElement;
 
   let currentStates = [];
   renderJobs(dataJson);
