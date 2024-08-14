@@ -1,7 +1,8 @@
 import dataJson from "../data/data.json";
+import { Job } from "../types";
 
-export default function (filters) {
-  return dataJson.filter((job) =>
+export default function (filters: string[]): Job[] {
+  return dataJson.filter((job: Job) =>
     filters.every(
       (filter) =>
         job.role === filter ||

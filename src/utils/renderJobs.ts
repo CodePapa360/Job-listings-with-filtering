@@ -1,9 +1,14 @@
-export default function (data) {
-  const jobsContainer = document.querySelector(".job-list");
+import { Job, Jobs } from "../types";
 
-  const markup = data
+export default function (jobs: Jobs): void {
+  const jobsContainer = document.querySelector(
+    ".job-list",
+  ) as HTMLUListElement | null;
+  if (!jobsContainer) return;
+
+  const markup = jobs
     .map(
-      (job) => `
+      (job: Job) => `
     <li class="job-list__job ${job.new || job.featured ? "updated" : ""}">
     <div class="logo">
       <img src="${job.logo}" alt="${job.company} logo" />
