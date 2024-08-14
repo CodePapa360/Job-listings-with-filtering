@@ -19,8 +19,8 @@ Challenge from [Frontend Mentor](https://www.frontendmentor.io/challenges)
 <!-- Badges -->
 <div align="center">
 
-![Status](https://img.shields.io/badge/Status-Completed-success?style=flat)
-![version](https://img.shields.io/github/package-json/v/CodePapa360/Convayto?color=blue)
+![Status](https://img.shields.io/badge/Status-Completed-success)
+![version](https://img.shields.io/github/package-json/v/CodePapa360/job-listings-with-filtering)
 ![License](https://img.shields.io/badge/License-MIT-blue)
 
 </div>
