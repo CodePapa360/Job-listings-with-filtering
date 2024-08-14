@@ -19,16 +19,15 @@ Challenge from [Frontend Mentor](https://www.frontendmentor.io/challenges)
 <!-- Badges -->
 <div align="center">
 
-<img src="https://img.shields.io/badge/Status-Completed-success?style=flat" alt="Status" />
-
-<!-- Liceensee -->
-<img src="https://img.shields.io/badge/License-MIT-blue?style=flat" alt="License" />
+![Status](https://img.shields.io/badge/Status-Completed-success?style=flat)
+![version](https://img.shields.io/github/package-json/v/CodePapa360/Convayto?color=blue)
+![License](https://img.shields.io/badge/License-MIT-blue)
 
 </div>
 
 <!-- Brief -->
 <p align="center">
-This app filters jobs by role, level, languages, and tools. It receives data from a local JSON file and manipulates it conditionally to provide the most relevant results. This project was a great way to practice filtering methods in JavaScript.
+This app filters jobs by role, level, languages, and tools. It receives data from a local JSON file and manipulates it conditionally to provide the most relevant results. This project was a great way to practice filtering methods, and later upgrading it to TypeScript (starting from version 2.0.0) further enhanced type safety and maintainability.
 </p>
 
 <!-- Screenshot -->
@@ -48,7 +47,7 @@ Users should be able to:
 
 ## Built with
 
-- Vanilla JavaScript
+- TypeScript
 - Sass
 - HTML5
 - Mobile-first workflow
@@ -99,3 +98,6 @@ This project was inspired by the "IP Address Tracker" challenge from Frontend Me
 
 This project is licensed under the [MIT](https://github.com/CodePapa360/Job-listings-with-filtering/blob/main/LICENSE.md) License - see the LICENSE file for details.
 
+```
+
+```
